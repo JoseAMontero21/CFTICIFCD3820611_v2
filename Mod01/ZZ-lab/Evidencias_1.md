@@ -1,3 +1,5 @@
+José A. Montero
+
 ---
 lab:
     az204Title: 'Lab 01: Building a web application on Azure platform as a service offerings'
@@ -66,8 +68,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 
 1.  From the **Storage accounts** blade, get your list of storage account instances.
-
 1.  From the **Storage accounts** blade, select **New**.
+
+![01_2](images/01_2.png)
+
+
 
 1.  From the **Create storage account** blade, observe the tabs from the blade, such as **Basics**, **Tags**, and **Review + Create**.
 
@@ -76,34 +81,56 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 1.  Select the **Basics** tab, and in the tab area, perform the following actions:
     
     1.  Leave the **Subscription** text box set to its default value.
-    
     1.  In the **Resource group** section, select **Create new**, enter **ManagedPlatform**, and then select **OK**.
-    
     1.  In the **Storage account name** text box, enter **imgstor*[yourname]***.
-    
     1.  In the **Location** list, select the **(US) East US** region.
-    
     1.  In the **Performance** section, select **Standard**.
     
+    ![01_3](images/01_3.png)
+    
+    
+    
     1.  In the **Account kind** list, select **StorageV2 (general purpose v2)**.
-    
     1.  In the **Replication** list, select **Locally-redundant storage (LRS)**.
-    
     1.  Select **Review + Create**.
+    
+    ![01_4](images/01_4.png)
 
-1.  From the **Review + Create** tab, review the options that you specified in the previous steps.
+    
+    
+1. From the **Review + Create** tab, review the options that you specified in the previous steps.
 
-1.  Select **Create** to create the storage account by using your specified configuration.
+1. Select **Create** to create the storage account by using your specified configuration.
+
+   ![01_5](images/01_5.png)
+
+   
 
 1.  From the **Deployment** blade, wait for the creation task to complete before moving forward with this lab.
 
 1.	Select the **Go to resource** button from the **Deployment** blade to go to the newly created storage account.
 
-1.	From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+1. From the **Storage account** blade, find the **Settings** section, and then select **Access keys**.
+
+   ![01_6](images/01_6.png)
+
+   
 
 1.	From the **Access keys** blade, select any one of the keys, and then record the value of either of the **Connection string** boxes. You'll use this value later in this lab.
 
+    ![01_7](images/01_7.png)
+    
+    
+    
     > **Note**: It doesn't matter which connection string you choose. They are interchangeable.
+
+
+
+![01_8](images/01_8.png)
+
+
+
+
 
 #### Task 3: Upload a sample blob
 
