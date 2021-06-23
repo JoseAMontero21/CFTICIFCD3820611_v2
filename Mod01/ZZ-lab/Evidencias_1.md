@@ -18,6 +18,14 @@ Given the dynamic nature of Microsoft cloud tools, you might experience Azure UI
 
 Microsoft updates this training course when the community brings needed changes to our attention; however, because cloud updates occur frequently, you might encounter UI changes before this training content updates. **If this occurs, adapt to the changes, and then work through them in the labs as needed.**
 
+
+
+![01_0](images/01_0.png)
+
+
+
+
+
 ## Instructions
 
 ### Before you start
@@ -134,43 +142,81 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 #### Task 3: Upload a sample blob
 
-1.  In the Azure portal's navigation pane, select **Resource groups**.
+1. In the Azure portal's navigation pane, select **Resource groups**.
 
-1.  From the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
+1. From the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
-1.  From the **ManagedPlatform** blade, select the **imgstor*[yourname]*** storage account that you created earlier in this lab.
+1. From the **ManagedPlatform** blade, select the **imgstor*[yourname]*** storage account that you created earlier in this lab.
 
-1.  From the **Storage Account** blade, in the **Blob service** section, select the **Containers** link.
+1. From the **Storage Account** blade, in the **Blob service** section, select the **Containers** link.
 
-1.  In the **Containers** section, select **+ Container**.
+   ![01_9](images/01_9.png)
+
+   
+
+1. In the **Containers** section, select **+ Container**.
+
+   ![01_10](images/01_10.png)
+
+   
 
 1.  In the **New container** window, perform the following actions:
     
-    1.  In the **Name** text box, enter **images**.
+    1. In the **Name** text box, enter **images**.
     
-    1.  In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
+    1. In the **Public access level** list, select **Blob (anonymous read access for blobs only)**, and then select **Create**.
 
-1.  In the **Containers** section, select the newly created **images** container.
+       ![01_11](images/01_11.png)
+    
+       
+    
+1. In the **Containers** section, select the newly created **images** container.
 
-1.	From the **Container** blade, select **Upload**.
+   ![01_12](images/01_12.png)
+
+   
+
+1. From the **Container** blade, select **Upload**.
+
+   ![01_13](images/01_13.png)
+
+   
 
 1.	In the **Upload blob** window, perform the following actions:
 
-    1.  In the **Files** section, select the **Folder** icon.
+    1. In the **Files** section, select the **Folder** icon.
 
-    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **grilledcheese.jpg** file, and then select **Open**.
+    1. In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **grilledcheese.jpg** file, and then select **Open**.
 
-    1.  Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**. Wait for the blob to upload before you continue with this lab.
+    1. Ensure that the **Overwrite if files already exist** check box is selected, and then select **Upload**. Wait for the blob to upload before you continue with this lab.
+    
+       ![01_14](images/01_14.png)
+    
+       
+
+![01_15](images/01_15.png)
+
+
+
+
 
 #### Task 4: Create a web app
 
-1.  In the Azure portal's navigation pane, select **Create a resource**.
+1. In the Azure portal's navigation pane, select **Create a resource**.
+
+   ![01_16](images/01_16.png)
+
+   
 
 1.  From the **New** blade, find the **Search the Marketplace** text box.
 
 1.  In the search box, enter **Web**, and then select Enter.
 
-1.  From the **Marketplace** search results blade, select the **Web App** result.
+1. From the **Marketplace** search results blade, select the **Web App** result.
+
+   ![01_17](images/01_17.png)
+
+   
 
 1.  From the **Web App** blade, select **Create**.
 
@@ -180,35 +226,53 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Basics** tab, perform the following actions:
     
-    1.  Leave the **Subscription** text box set to its default value.
+    1. Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** drop-down list, select **ManagedPlatform**.
+    1. In the **Resource group** drop-down list, select **ManagedPlatform**.
     
-    1.  In the **Name** text box, enter **imgapi*[yourname]***.
+    1. In the **Name** text box, enter **imgapi*[yourname]***.
 
-    1.  In the **Publish** section, select **Code**.
+    1. In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
+    1. In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
 
-    1.  In the **Operating System** section, select **Windows**.
+    1. In the **Operating System** section, select **Windows**.
 
-    1.  In the **Region** drop-down list, select the **East US** region.
+    1. In the **Region** drop-down list, select the **East US** region.
 
-    1.  In the **Windows Plan (East US)** section, select **Create new**, enter the value **ManagedPlan** in the **Name** text box, and then select **OK**.
+    1. In the **Windows Plan (East US)** section, select **Create new**, enter the value **ManagedPlan** in the **Name** text box, and then select **OK**.
 
-    1.  Leave the **SKU and size** section set to its default value.
+    1. Leave the **SKU and size** section set to its default value.
 
+       ![01_18](images/01_18.png)
+
+       
+    
     1.  Select **Next: Monitoring**.
+    
+1. From the **Monitoring** tab, perform the following actions:
 
-1.  From the **Monitoring** tab, perform the following actions:
+   1. In the **Enable Application Insights** section, select **No**.
 
-    1.  In the **Enable Application Insights** section, select **No**.
+   1. Select **Review + Create**.
 
-    1.  Select **Review + Create**.
+      ![01_19](images/01_19.png)
+
+      
 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the web app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+1. Select **Create** to create the web app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+
+   ![01_20](images/01_20.png)
+
+   
+
+![01_21](images/01_21.PNG)
+
+
+
+
 
 #### Task 5: Configure the web app
 
@@ -216,29 +280,61 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  From the **Resource groups** blade, select the **ManagedPlatform** resource group that you created earlier in this lab.
 
-1.  From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
+1. From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+   ![01_22](images/01_22.png)
+
+   
+
+1. From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+
+   ![01_23](images/01_23.png)
+
+   
 
 1.  In the **Configuration** section, perform the following actions:
     
-    1.  Select the **Application settings** tab, and then select **New application setting**.
+    1. Select the **Application settings** tab, and then select **New application setting**.
     
-    1.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **StorageConnectionString**.
+       ![01_24](images/01_24.png)
     
-    1.  In the **Value** text box, enter the storage connection string that you copied earlier in this lab.
+       
     
-    1.  Leave the **Deployment slot setting** text box set to its default value, and then select **OK** to close the pop-up dialog and return to the **Configuration** section.
+    1. In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **StorageConnectionString**.
     
-    1.  Select **Save** from the blade to persist your settings.
+    1. In the **Value** text box, enter the storage connection string that you copied earlier in this lab.
   
-    Wait for your application settings to persist before you move forward with the lab.
+    1. Leave the **Deployment slot setting** text box set to its default value, and then select **OK** to close the pop-up dialog and return to the **Configuration** section.
 
-1.  From the **Web App** blade in the **Settings** section, select the **Properties** link.
+       ![01_25](images/01_25.png)
+    
+       
+    
+    1. Select **Save** from the blade to persist your settings.
+    
+       ![01_26](images/01_26.png)
+    
+       
+    
+    Wait for your application settings to persist before you move forward with the lab.
+    
+1. From the **Web App** blade in the **Settings** section, select the **Properties** link.
+
+   ![01_27](images/01_27.png)
+
+   
 
 1.  In the **Properties** section, copy the value of the **URL** text box. You'll use this value later in the lab.
 
+    ![01_28](images/01_28.png)
+    
+    
+    
     > **Note**: At this point, the web server at this URL will return a 404 error. You have not deployed any code to the Web App yet. You will deploy code to the Web App later in this lab.
+
+
+
+
 
 #### Task 6: Deploy an ASP.NET web application to Web Apps
 
@@ -248,7 +344,11 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\API**, and then select **Select Folder**.
 
-1.  In the Explorer pane of the **Visual Studio Code** window, expand the **Controllers** folder, and then select the **ImagesController.cs** file to open the file in the editor.
+1. In the Explorer pane of the **Visual Studio Code** window, expand the **Controllers** folder, and then select the **ImagesController.cs** file to open the file in the editor.
+
+   ![01_29](images/01_29.PNG)
+
+   
 
 1.  In the editor, in the **ImagesController** class on line 26, observe the **GetCloudBlobContainer** method and the code used to retrieve a container.
 
@@ -258,37 +358,73 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.  On the taskbar, select the **Windows Terminal** icon.
 
-1.  At the open command prompt, enter the following command, and then select Enter to sign in to the Azure Command-Line Interface (CLI):
+1. At the open command prompt, enter the following command, and then select Enter to sign in to the Azure Command-Line Interface (CLI):
 
-    ```
-    az login
-    ```
+   ````
+   az login
+   ````
+
+   
+
+   ![01_30](images/01_30.png)
+
+   
+
+   ![01_31](images/01_31.png)
+
+   
 
 1.	In the **Microsoft Edge** browser window, perform the following actions:
     
-    1.  Enter the email address for your Microsoft account, and then select **Next**.
+    1. Enter the email address for your Microsoft account, and then select **Next**.
     
-    1.  Enter the password for your Microsoft account, and then select **Sign in**.
+    1. Enter the password for your Microsoft account, and then select **Sign in**.
 
-1.	Return to the currently open **Command Prompt** window. Wait for the sign-in process to finish.
+       ![01_32](images/01_32.PNG)
+    
+       
+    
+1. Return to the currently open **Command Prompt** window. Wait for the sign-in process to finish.
 
-1.	At the command prompt, enter the following command, and then select Enter to list all the apps in your **ManagedPlatform** resource group:
+   ![01_33](images/01_33.png)
 
-    ```
-    az webapp list --resource-group ManagedPlatform
-    ```
+   
 
-1.	Enter the following command, and then select Enter to find the apps that have the **imgapi\*** prefix:
+1. At the command prompt, enter the following command, and then select Enter to list all the apps in your **ManagedPlatform** resource group:
 
-    ```
-    az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')]"
-    ```
+   ````
+   az webapp list --resource-group ManagedPlatform
+   ````
 
-1.	Enter the following command, and then select Enter to render only the name of the single app that has the **imgapi\*** prefix:
+   
 
-    ```
-    az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv
-    ```
+   ![01_34](images/01_34.png)
+
+   
+
+1. Enter the following command, and then select Enter to find the apps that have the **imgapi\*** prefix:
+
+   ````
+   az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')]"
+   ````
+
+   
+
+   ![01_35](images/01_35.png)
+
+   
+
+1. Enter the following command, and then select Enter to render only the name of the single app that has the **imgapi\*** prefix:
+
+   ````
+   az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv
+   ````
+
+   
+
+   ![01_36](images/01_36.png)
+
+   
 
 1.	Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\API** directory that contains the lab files:
 
@@ -298,25 +434,39 @@ Find the taskbar on your Windows 10 desktop. The taskbar contains the icons for 
 
 1.	Enter the following command, and then select Enter to deploy the **api.zip** file to the web app that you created earlier in this lab:
 
-    ```
+    ````
     az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name <name-of-your-api-app>
-    ```
+    ````
 
+    
+    
+    ![01_37](images/01_37.png)
+    
+    
+    
     > **Note**: Replace the *\<name-of-your-api-app\>* placeholder with the name of the web app that you created earlier in this lab. You recently queried this app’s name in the previous steps.
 
   	Wait for the deployment to complete before you move forward with this lab.
 
-1.  In the Azure portal's navigation pane, select the **Resource groups** link.
+1. In the Azure portal's navigation pane, select the **Resource groups** link.
 
-1.	From the **Resource groups** blade, find and select the **ManagedPlatform** resource group that you created earlier in this lab.
+1. From the **Resource groups** blade, find and select the **ManagedPlatform** resource group that you created earlier in this lab.
 
-1.	From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
+1. From the **ManagedPlatform** blade, select the **imgapi*[yourname]*** web app that you created earlier in this lab.
 
-1.	From the **Web App** blade, select **Browse**.
+1. From the **Web App** blade, select **Browse**.
 
-1.	Perform a GET request to the root of the website, and then observe the JavaScript Object Notation (JSON) array that's returned. This array should contain the URL for your single uploaded image in your Storage account.
+   ![01_38](images/01_38.png)
 
-1.	Return to your browser window with the Azure portal.
+   
+
+1. Perform a GET request to the root of the website, and then observe the JavaScript Object Notation (JSON) array that's returned. This array should contain the URL for your single uploaded image in your Storage account.
+
+   ![01_39](images/01_39.png)
+
+   
+
+1. Return to your browser window with the Azure portal.
 
 1.  Close the currently running Visual Studio Code and Windows Terminal applications.
 
@@ -336,7 +486,11 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  From the **Marketplace** search results blade, select the **Web App** result.
 
-1.  From the **Web App** blade, select **Create**.
+1. From the **Web App** blade, select **Create**.
+
+   ![01_40](images/01_40.png)
+
+   
 
 1.  From the second **Web App** blade, find the tabs from the blade, such as **Basics**.
 
@@ -344,33 +498,53 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  From the **Basics** tab, perform the following actions:
     
-    1.  Leave the **Subscription** text box set to its default value.
+    1. Leave the **Subscription** text box set to its default value.
     
-    1.  In the **Resource group** drop-down list, select **ManagedPlatform**.
+    1. In the **Resource group** drop-down list, select **ManagedPlatform**.
     
-    1.  In the **Name** text box, enter **imgweb*[yourname]***.
+    1. In the **Name** text box, enter **imgweb*[yourname]***.
 
-    1.  In the **Publish** section, select **Code**.
+    1. In the **Publish** section, select **Code**.
 
-    1.  In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
+    1. In the **Runtime stack** drop-down list, select **.NET Core 3.1 (LTS)**.
 
-    1.  In the **Operating System** section, select **Windows**.
+    1. In the **Operating System** section, select **Windows**.
 
-    1.  In the **Region** drop-down list, select the **East US** region.
+    1. In the **Region** drop-down list, select the **East US** region.
 
-    1.  In the **Windows Plan (East US)** section, select **ManagedPlan (S1)**.
+    1. In the **Windows Plan (East US)** section, select **ManagedPlan (S1)**.
 
+       ![01_41](images/01_41.png)
+
+       
+    
     1.  Select **Next: Monitoring**.
+    
+1. From the **Monitoring** tab, perform the following actions:
 
-1.  From the **Monitoring** tab, perform the following actions:
+   1. In the **Enable Application Insights** section, select **No**.
 
-    1.  In the **Enable Application Insights** section, select **No**.
+   1. Select **Review + Create**.
 
-    1.  Select **Review + Create**.
+      ![01_42](images/01_42.png)
+
+      
 
 1.  From the **Review + Create** tab, review the options that you selected during the previous steps.
 
-1.  Select **Create** to create the web app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+1. Select **Create** to create the web app by using your specified configuration. Wait for the creation task to complete before you move forward with this lab.
+
+   
+
+   ![01_43](images/01_43.png)
+
+   
+
+   ![01_44](images/01_44.PNG)
+
+   
+
+   
 
 #### Task 2: Configure a web app
 
@@ -380,12 +554,20 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  From the **ManagedPlatform** blade, select the **imgweb*[yourname]*** web app that you created earlier in this lab.
 
-1.  From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+1. From the **Web App** blade, in the **Settings** section, select the **Configuration** link.
+
+   ![01_45](images/01_45.png)
+
+   
 
 1.  In the **Configuration** section, perform the following actions:
     
-    1.  Select the **Application settings** tab, and then select **New application setting**.
+    1. Select the **Application settings** tab, and then select **New application setting**.
     
+       ![01_46](images/01_46.png)
+    
+       
+
     1.  In the **Add/Edit application setting** pop-up dialog, in the **Name** text box, enter **ApiUrl**.
     
     1.  In the **Value** text box, enter the web app URL that you copied earlier in this lab.
@@ -393,12 +575,24 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
         > **Note**: Make sure you include the protocol, such as **https://**, in the URL that you copy into the **Value** text box for this application setting.
     
     1.  Leave the **Deployment slot setting** text box set to its default value.
-
-    1.  Select **OK** to close the pop-up dialog, and then return to the **Configuration** section.
-    
-    1.  Select **Save** from the blade to persist your settings.
   
+    1. Select **OK** to close the pop-up dialog, and then return to the **Configuration** section.
+    
+       ![01_47](images/01_47.png)
+    
+       
+    
+    1. Select **Save** from the blade to persist your settings.
+    
+       ![01_48](images/01_48.png)
+    
+       
+    
     Wait for your application settings to persist before you move forward with the lab.
+    
+    
+    
+    
 
 #### Task 3: Deploy an ASP.NET web application to Web Apps
 
@@ -408,7 +602,11 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Web**, and then select **Select Folder**.
 
-1.  In the Explorer pane of the **Visual Studio Code** window, expand the **Pages** folder, and then select the **Index.cshtml.cs** file to open the file in the editor.
+1. In the Explorer pane of the **Visual Studio Code** window, expand the **Pages** folder, and then select the **Index.cshtml.cs** file to open the file in the editor.
+
+   ![01_49](images/01_49.PNG)
+
+   
 
 1.  In the editor, in the **IndexModel** class on line 30, observe the **OnGetAsync** method and the code used to retrieve the list of images from the API.
 
@@ -416,37 +614,73 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.  On the taskbar, select the **Windows Terminal** icon.
 
-1.  At the open command prompt, enter the following command, and then select Enter to sign in to the Azure CLI:
+1. At the open command prompt, enter the following command, and then select Enter to sign in to the Azure CLI:
 
-    ```
-    az login
-    ```
+   ````
+   az login
+   ````
+
+   
+
+   ![01_50](images/01_50.png)
+
+   
 
 1.  In the browser window, perform the following actions:
     
-    1.  Enter the email address for your Microsoft account, and then select **Next**.
+    1. Enter the email address for your Microsoft account, and then select **Next**.
     
-    1.  Enter the password for your Microsoft account, and then select **Sign in**.
+    1. Enter the password for your Microsoft account, and then select **Sign in**.
 
-1.	Return to the currently open **Command Prompt** window. Wait for the sign-in process to finish.
+       ![01_51](images/01_51.PNG)
+    
+       
+    
+1. Return to the currently open **Command Prompt** window. Wait for the sign-in process to finish.
 
-1.	Enter the following command, and then select Enter to list all the apps in your **ManagedPlatform** resource group:
+   ![01_52](images/01_52.png)
 
-    ```
-    az webapp list --resource-group ManagedPlatform
-    ```
+   
 
-1.	Enter the following command, and then select Enter to find the apps that have the **imgweb\*** prefix:
+1. Enter the following command, and then select Enter to list all the apps in your **ManagedPlatform** resource group:
 
-    ```
-    az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')]"
-    ```
+   ````
+   az webapp list --resource-group ManagedPlatform
+   ````
 
-1.	Enter the following command, and then select Enter to render only the name of the single app that has the **imgweb\*** prefix:
+   
 
-    ```
-    az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')].{Name:name}" --output tsv
-    ```
+   ![01_53](images/01_53.png)
+
+   
+
+1. Enter the following command, and then select Enter to find the apps that have the **imgweb\*** prefix:
+
+   ````
+   az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')]"
+   ````
+
+   
+
+   ![01_54](images/01_54.png)
+
+   
+
+   ![01_55](images/01_55.png)
+
+   
+
+1. Enter the following command, and then select Enter to render only the name of the single app that has the **imgweb\*** prefix:
+
+   ````
+   az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')].{Name:name}" --output tsv
+   ````
+
+   
+
+   ![01_56](images/01_56.png)
+
+   
 
 1.	Enter the following command, and then select Enter to change the current directory to the **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Web** directory that contains the lab files:
 
@@ -456,10 +690,16 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.	Enter the following command, and then select Enter to deploy the **web.zip** file to the web app that you created earlier in this lab:
 
-    ```
+    ````
     az webapp deployment source config-zip --resource-group ManagedPlatform --src web.zip --name <name-of-your-web-app>
-    ```
+    ````
 
+    
+    
+    ![01_57](images/01_57.png)
+    
+    
+    
     > **Note**: Replace the *\<name-of-your-web-app\>* placeholder with the name of the web app that you created earlier in this lab. You recently queried this app’s name in the previous steps.
 
   	Wait for the deployment to complete before you move forward with this lab.
@@ -470,21 +710,41 @@ In this exercise, you created a web app in Azure and then deployed your ASP.NET 
 
 1.	From the **ManagedPlatform** blade, select the **imgweb*[yourname]*** web app that you created earlier in this lab.
 
-1.	From the **Web App** blade, select **Browse**.
+1. From the **Web App** blade, select **Browse**.
+
+   ![01_58](images/01_58.png)
+
+   
 
 1.	Observe the list of images in the gallery. The gallery should list a single image that was uploaded to Storage earlier in the lab.
 
 1.	From the **Contoso Photo Gallery** webpage, find the **Upload a new image** section, and then perform the following actions:
     
-    1.  Select **Browse**.
+    1. Select **Browse**.
     
-    1.  In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **bahnmi.jpg** file, and then select **Open**.
+       ![01_59](images/01_59.png)
     
-    1.  Select **Upload**.
+       
 
-1.	Observe that the list of gallery images has updated with your new image.
+    1. In the **File Explorer** window, browse to **Allfiles (F):\\Allfiles\\Labs\\01\\Starter\\Images**, select the **bahnmi.jpg** file, and then select **Open**.
+    
+       ![01_60](images/01_60.PNG)
+    
+       
+    
+    1. Select **Upload**.
+    
+       ![01_61](images/01_61.png)
+    
+       
+    
+1. Observe that the list of gallery images has updated with your new image.
 
-    > **Note**: In some rare cases, you might need to refresh your browser window to retrieve the new image.
+   ![01_62](images/01_62.PNG)
+
+   
+
+   > **Note**: In some rare cases, you might need to refresh your browser window to retrieve the new image.
 
 1.	Return to your browser window with the Azure portal.
 
@@ -498,27 +758,47 @@ In this exercise, you created an Azure web app and deployed an existing web appl
 
 #### Task 1: Open Azure Cloud Shell
 
-1.  In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
+1. In the Azure portal, select the **Cloud Shell** icon to open a new shell instance.
 
-    > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
+   ![01_63](images/01_63.png)
+
+   
+
+   > **Note**: The **Cloud Shell** icon is represented by a greater than sign (\>) and underscore character (\_).
 
 1.  If this is your first time opening Cloud Shell using your subscription, you can use the **Welcome to Azure Cloud Shell Wizard** to configure Cloud Shell for first-time usage. Perform the following actions in the wizard:
     
-    1.  A dialog box prompts you to configure the shell. Select **Bash**, review the selected subscription, and then select **Create storage**.
+    1. A dialog box prompts you to configure the shell. Select **Bash**, review the selected subscription, and then select **Create storage**.
     
-    1.  Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab.
+    1. Wait for Cloud Shell to finish its initial setup procedures before moving forward with the lab.
 
+       ![01_64](images/01_64.png)
+    
+       
+    
     > **Note**: If you don't notice the Cloud Shell configuration options, this is most likely because you're using an existing subscription with this course's labs. The labs are written with the presumption that you're using a new subscription.
 
 #### Task 2: Delete resource groups
 
-1.  Enter the following command, and then select Enter to delete the **ManagedPlatform** resource group:
+1. Enter the following command, and then select Enter to delete the **ManagedPlatform** resource group:
 
-    ```
-    az group delete --name ManagedPlatform --no-wait --yes
-    ```
+   ````
+   az group delete --name ManagedPlatform --no-wait --yes
+   ````
 
-1.  Close the Cloud Shell pane in the portal.
+   
+
+   ![01_65](images/01_65.png)
+
+   
+
+1. Close the Cloud Shell pane in the portal.
+
+   
+
+   ![01_66](images/01_66.PNG)
+
+   
 
 #### Task 3: Close the active applications
 
